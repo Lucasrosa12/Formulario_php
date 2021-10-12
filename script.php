@@ -7,9 +7,11 @@ $categorias[] = 'Adulto';
 $categorias[] = 'Idoso';
 #print_r($categorias);           Printa na telas as informações que estão dentro array
 
-$nome = 'Lucas';
-$idade = 8;
-#var_dump($nome, $idade);
+$nome = $_POST['nome'];                 //$nome = $_GET['nome'];              MUDAR TAMBÉM NO HTML
+$idade = $_POST['idade'];               //$idade = $_GET['idade'];
+//var_dump($nome, $idade);
+//return 0;
+
 
 if ($idade >= 6 && $idade <= 12) {
 
